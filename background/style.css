@@ -1,0 +1,9 @@
+body{
+  background-image: 
+    url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+  /* Solicitando que a imagem cubra o espaço sem repetir */
+  background-size: cover; 
+  /* Você pode solicitar que a imagem não se repita  com a propriedade abaixo*/
+  background-repeat: no-repeat;
+}
+
