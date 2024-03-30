@@ -1,0 +1,22 @@
+
+/* O id é mais específico do que a classe porem perde para o elemento 
+que é atribuído a própria estilização nele  */
+#yellow{
+  color: yellow;
+}
+
+/* Classe de seletores é mais especifico do que conjunto de seletores */
+.green{
+  color: green;
+}
+
+/* Conjunto de seletores é mais especifico do que somente o seletor */
+body > h1{
+  color: purple;
+}
+
+/* mesmo sendo menos importante na ordem de especifidade ele pode se tornar mais especifico 
+se atribuir o atributo !importante */
+h1{
+  color: red !important;
+}

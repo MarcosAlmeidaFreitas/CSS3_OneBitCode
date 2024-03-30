@@ -1,0 +1,38 @@
+/* No nt:nth-child() é possível fazer operações matemáticas nele,
+ nesse exemplo estamos pegando os múltiplos de 2 */
+li:nth-child(2n){
+  color: blue;
+}
+
+/* Nesse exemplo vamos pegar os impares através de um cálculo matemático */
+li:nth-child(2n - 1){
+  color: red;
+}
+
+/* Atribuindo aos elementos impares */
+li:nth-child(even){
+  color: purple;
+}
+
+/* Atribuindo aos elementos impares */
+li:nth-child(odd){
+  color: gray;
+}
+
+/* Criar um elemento antes */
+li::before{
+  content: '(antes)  ';
+  color: coral;
+}
+
+li::after{
+  /* Criar um elemento depois */
+  content: '  (depois)';
+  color: aquamarine;
+}
+
+/* Pegar todos os elementos que não seja o primeiro*/
+li:not(:first-child){
+  color: pink;
+}
+
